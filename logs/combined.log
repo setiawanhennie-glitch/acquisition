@@ -1,3 +1,9 @@
 {"level":"info","message":"Helloe from acquisitions!","service":"acquisitions-api"}
 {"level":"info","message":"::1 - - [29/Oct/2026:15:37:48 +0000] \"GET / HTTP/1.1\" 200 24 \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.144.0 Chrome/150.0.7871.250 Electron/43.8.3 Safari/537.36\"","service":"acquisitions-api"}
 {"level":"info","message":"::1 - - [29/Oct/2026:15:37:48 +0000] \"GET /favicon.ico HTTP/1.1\" 404 150 \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.144.0 Chrome/150.0.7871.250 Electron/43.8.3 Safari/537.36\"","service":"acquisitions-api"}
+{"level":"info","message":"User test@gmail.com created successfully","service":"acquisitions-api","timestamp":"2026-10-31T05:59:42.561Z"}
+{"level":"info","message":"User registered succesfully: test@gmail.com","service":"acquisitions-api","timestamp":"2026-10-31T05:59:42.588Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [31/Oct/2026:05:59:42 +0000] \"POST /api/auth/sign-up HTTP/1.1\" 201 71 \"-\" \"PostmanRuntime/7.56.3\"","service":"acquisitions-api","timestamp":"2026-10-31T05:59:42.602Z"}
+{"level":"info","message":"User henhen@gmail.com created successfully","service":"acquisitions-api","timestamp":"2026-10-31T06:10:05.912Z"}
+{"level":"info","message":"User registered succesfully: henhen@gmail.com","service":"acquisitions-api","timestamp":"2026-10-31T06:10:05.916Z"}
+{"level":"info","message":"::1 - - [31/Oct/2026:06:10:05 +0000] \"POST /api/auth/sign-up HTTP/1.1\" 201 74 \"-\" \"PostmanRuntime/7.56.3\"","service":"acquisitions-api","timestamp":"2026-10-31T06:10:05.917Z"}
