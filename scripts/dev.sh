@@ -17,7 +17,7 @@ fi
 # --- NEW: load .env.development into this shell AND export to child processes ---
 set -a
 # shellcheck disable=SC1091
-source .env.development
+source "./.env.development"
 set +a
 
 # --- NEW: safety guard — never run "dev" migrations against a remote database ---
