@@ -22,7 +22,8 @@
     "format:check": "prettier --check .",
     "db:generate": "drizzle-kit generate",
     "db:migrate": "drizzle-kit migrate",
-    "db:studio": "drizzle-kit studio"
+    "db:studio": "drizzle-kit studio",
+    "dev:docker": "sh ./scripts/dev.sh"
   },
   "repository": {
     "type": "git",

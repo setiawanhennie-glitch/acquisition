@@ -1,0 +1,15 @@
+node_modules
+npm-debug.log
+logs
+*.log
+.env
+.env.*
+!.env.example
+.git
+.vscode
+.idea
+coverage
+dist
+Dockerfile
+docker-compose*.yml
+supabase/.temp
