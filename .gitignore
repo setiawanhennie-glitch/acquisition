@@ -5,4 +5,5 @@ node_modules
 # generated logs
 *.log
 logs/*
-!logs/.gitkeep
+!logs/.gitkeep.supabase/
+.supabase/

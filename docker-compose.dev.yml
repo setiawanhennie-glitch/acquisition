@@ -1,0 +1,27 @@
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: development
+    ports:
+      - "3000:3000"
+    env_file:
+      - .env.development
+    volumes:
+      - ./src:/app/src   
+    depends_on:
+      supabase-ready:
+        condition: service_completed_successfully
+    extra_hosts:
+      - "host.docker.internal:host-gateway"   # Linux: reach host's Supabase ports
+    command: ["npm", "run", "dev"]
+
+  # A one-shot container that just waits until Supabase Postgres accepts connections
+  supabase-ready:
+    image: postgres:16-alpine
+    depends_on: []           # CLI must already be running — see README
+    command: >
+      sh -c "until pg_isready -h host.docker.internal -p 54322 -U postgres; do sleep 1; done"
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
